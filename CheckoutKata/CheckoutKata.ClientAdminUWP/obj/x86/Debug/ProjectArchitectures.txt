@@ -1,0 +1,2 @@
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\CheckoutKata.ClientAdminUWP.csproj;x86
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\CheckoutKata.Core.csproj;neutral

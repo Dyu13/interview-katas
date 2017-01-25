@@ -1,0 +1,8 @@
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\obj\Debug\CheckoutKata.Core.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\obj\Debug\CheckoutKata.Core.pdb
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\CheckoutKata.Core.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\CheckoutKata.Core.pdb
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\MvvmCross.Binding.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\MvvmCross.Core.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\MvvmCross.Localization.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\MvvmCross.Platform.dll
