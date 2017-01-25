@@ -9,7 +9,7 @@ namespace CheckoutKata.Core.Database
             throw new System.NotImplementedException();
         }
 
-        public T GetData()
+        public T GetData(string name)
         {
             throw new System.NotImplementedException();
         }

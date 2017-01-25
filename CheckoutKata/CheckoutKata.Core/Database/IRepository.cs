@@ -6,7 +6,7 @@ namespace CheckoutKata.Core.Database
     {
         IEnumerable<T> GetDataList();
 
-        T GetData();
+        T GetData(string name);
 
         void Insert(T entry);
 

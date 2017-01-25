@@ -4,7 +4,7 @@
     {
         public IRepository<T> Create<T>() where T : class, new()
         {
-            throw new System.NotImplementedException();
+            return new CsvRepository<T>();
         }
     }
 }
