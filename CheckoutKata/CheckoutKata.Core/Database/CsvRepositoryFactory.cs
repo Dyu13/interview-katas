@@ -4,7 +4,7 @@
     {
         public IRepository<T> Create<T>() where T : class, new()
         {
-            return new CsvRepository<T>();
+            return new ProductCsvRepository<T>();
         }
     }
 }

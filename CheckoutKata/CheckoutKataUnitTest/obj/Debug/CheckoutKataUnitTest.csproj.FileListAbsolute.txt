@@ -16,3 +16,7 @@ C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKataUnitTest\bin\D
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKataUnitTest\obj\Debug\CheckoutKataUnitTest.csprojResolveAssemblyReference.cache
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKataUnitTest\obj\Debug\CheckoutKataUnitTest.dll
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKataUnitTest\obj\Debug\CheckoutKataUnitTest.pdb
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKataUnitTest\bin\Debug\PCLStorage.Abstractions.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKataUnitTest\bin\Debug\PCLStorage.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKataUnitTest\bin\Debug\PCLStorage.Abstractions.xml
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKataUnitTest\bin\Debug\PCLStorage.xml

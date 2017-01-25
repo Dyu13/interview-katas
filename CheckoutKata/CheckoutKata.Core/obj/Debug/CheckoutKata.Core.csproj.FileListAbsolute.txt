@@ -6,4 +6,15 @@ C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debu
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\MvvmCross.Core.dll
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\MvvmCross.Localization.dll
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\MvvmCross.Platform.dll
-C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\obj\Debug\CheckoutKata.Core.csprojResolveAssemblyReference.cache
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\CheckoutKata.Core.dll.config
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\System.Net.Http.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\System.Net.Http.xml
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\obj\Debug\CheckoutKata.Core.csproj.App.config
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\PCLStorage.Abstractions.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\PCLStorage.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\PCLStorage.xml
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\PCLStorage.Abstractions.xml
