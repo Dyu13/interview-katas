@@ -6,3 +6,4 @@ C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debu
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\MvvmCross.Core.dll
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\MvvmCross.Localization.dll
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\MvvmCross.Platform.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\obj\Debug\CheckoutKata.Core.csprojResolveAssemblyReference.cache
