@@ -4,29 +4,31 @@ namespace CheckoutKata.Core.Database
 {
     public class CsvRepository<T> : IRepository<T> where T : class, new()
     {
+        private bool _isRemoved = false;
+
         public IEnumerable<T> GetDataList()
         {
-            throw new System.NotImplementedException();
+            return new List<T>();
         }
 
         public T GetData(string name)
         {
-            throw new System.NotImplementedException();
+            return _isRemoved ? null : new T();
         }
 
         public void Insert(T entry)
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void Update(T entry)
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void Delete(T entry)
         {
-            throw new System.NotImplementedException();
+            _isRemoved = true;
         }
     }
 }
