@@ -6,9 +6,18 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:views="using:MvvmCross.WindowsUWP.Views"
     mc:Ignorable="d">
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+            <StackPanel Padding="10">
+                <TextBox Text="{Binding FilterText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" PlaceholderText="Products Filter" />
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Update" Command="{Binding UpdateProductCommand}" Margin="5" IsEnabled="{Binding IsAnyProductSelected}" Visibility="{Binding IsNotNewProduct}" />
+                    <Button Content="Insert" Command="{Binding InsertProductCommand}" Margin="5" Visibility="{Binding IsNewProduct}" />
+                    <Button Content="Remove" Command="{Binding RemoveProductCommand}" Margin="5" IsEnabled="{Binding IsAnyProductSelected}" Visibility="{Binding IsNotNewProduct}" />
+                </StackPanel>
+                <ListView ItemsSource="{Binding FilteredProducts}" SelectedItem="{Binding SelectedProduct, Mode=TwoWay}" />
+            </StackPanel>
+        </Grid>
     </Grid>
 </views:MvxWindowsPage>
 

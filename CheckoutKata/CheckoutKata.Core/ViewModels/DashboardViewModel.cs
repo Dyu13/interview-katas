@@ -24,13 +24,14 @@ namespace CheckoutKata.Core.ViewModels
 
         public void Init()
         {
-            var productList = _productService.GetAllProducts().ToList().Select(p => p.Sku);
+            _productList = _productService.GetAllProducts().ToList().Select(p => p.Sku).ToList();
 
-            FilteredProducts = new MvxObservableCollection<string>(productList);
+            FilteredProducts = new MvxObservableCollection<string>(_productList);
 
             _productsQuantitiesDictionary = new Dictionary<Product, int>();
 
             IsAnyProductSelected = false;
+            IsNotNewProduct = true;
         }
 
         #endregion Initialization
@@ -40,6 +41,7 @@ namespace CheckoutKata.Core.ViewModels
         private readonly IProductService _productService;
         private readonly ICheckoutService _checkoutService;
         private Dictionary<Product, int> _productsQuantitiesDictionary;
+        private List<string> _productList;
 
         #endregion Private Properties
 
@@ -82,6 +84,14 @@ namespace CheckoutKata.Core.ViewModels
                 _selectedProduct = value;
 
                 RaisePropertyChanged(() => SelectedProduct);
+
+                if (SelectedProduct != null)
+                {
+                    IsAnyProductSelected = true;
+                    return;
+                }
+
+                IsAnyProductSelected = false;
             }
         }
 
@@ -101,6 +111,11 @@ namespace CheckoutKata.Core.ViewModels
                 _filterText = value;
 
                 RaisePropertyChanged(() => FilterText);
+
+                var filteredList = _productList.Where(p => p.Contains(FilterText));
+                FilteredProducts = new MvxObservableCollection<string>(filteredList);
+
+                IsAnyProductSelected = false;
             }
         }
 
@@ -119,7 +134,7 @@ namespace CheckoutKata.Core.ViewModels
 
                 _isAnyProductSelected = value;
 
-                RaisePropertyChanged(() => IsNewProduct);
+                RaisePropertyChanged(() => IsAnyProductSelected);
             }
         }
 
@@ -139,10 +154,31 @@ namespace CheckoutKata.Core.ViewModels
                 _isNewProduct = value;
 
                 RaisePropertyChanged(() => IsNewProduct);
+
+                IsNotNewProduct = !IsNewProduct;
             }
         }
 
         #endregion PROPERTY: IsNewProduct
+
+        #region PROPERTY: IsNotNewProduct
+        // TODO: use Converter for invert the Visibility
+        private bool _isNotNewProduct;
+
+        public bool IsNotNewProduct
+        {
+            get { return _isNotNewProduct; }
+            set
+            {
+                if (_isNotNewProduct == value) return;
+
+                _isNotNewProduct = value;
+
+                RaisePropertyChanged(() => IsNotNewProduct);
+            }
+        }
+
+        #endregion PROPERTY: IsUpdateAvailable
 
         #endregion Admin
 
@@ -228,6 +264,13 @@ namespace CheckoutKata.Core.ViewModels
 
         private void UpdateProduct()
         {
+            if (SelectedProduct == null)
+            {
+                // TODO: log and show popup message
+
+                return;
+            }
+
             var productDetailsNavigationParameter = new ProductDetailsNavigationParameter
             {
                 ProductSku = SelectedProduct,
@@ -280,7 +323,17 @@ namespace CheckoutKata.Core.ViewModels
 
         private void RemoveProduct()
         {
+            if (SelectedProduct == null)
+            {
+                // TODO: log and show popup message
+
+                return;
+            }
+
             _productService.RemoveProduct(SelectedProduct);
+
+            _productList.Remove(SelectedProduct);
+            FilteredProducts = new MvxObservableCollection<string>(_productList);
         }
 
         #endregion COMMAND: RemoveProduct

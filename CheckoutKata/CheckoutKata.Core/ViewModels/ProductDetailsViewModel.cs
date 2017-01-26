@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Windows.Input;
 using CheckoutKata.Core.Models;
 using CheckoutKata.Core.Services;
@@ -22,6 +23,7 @@ namespace CheckoutKata.Core.ViewModels
 
         public void Init(ProductDetailsNavigationParameter productDetailsNavigationParameter)
         {
+            IsNotNewProduct = true;
             IsNewProduct = productDetailsNavigationParameter.IsForNewProduct;
 
             if (IsNewProduct)
@@ -43,8 +45,10 @@ namespace CheckoutKata.Core.ViewModels
             }
 
             _productPrice = Product.UnitPrice;
+            UnitPrice = Convert.ToDouble(Product.UnitPrice);
             _productSpecialQty = Product.SpecialQty;
             _productSpecialPrice = Product.SpecialPrice;
+            SpecialPrice = Convert.ToDouble(Product.SpecialPrice);
         }
 
         #endregion Initialization
@@ -74,10 +78,73 @@ namespace CheckoutKata.Core.ViewModels
                 _isNewProduct = value;
 
                 RaisePropertyChanged(() => IsNewProduct);
+
+                IsNotNewProduct = !IsNewProduct;
             }
         }
 
         #endregion PROPERTY: IsNewProduct
+
+        #region PROPERTY: IsNotNewProduct
+        // TODO: use Converter for invert the Visibility
+        private bool _isNotNewProduct;
+
+        public bool IsNotNewProduct
+        {
+            get { return _isNotNewProduct; }
+            set
+            {
+                if (_isNotNewProduct == value) return;
+
+                _isNotNewProduct = value;
+
+                RaisePropertyChanged(() => IsNotNewProduct);
+            }
+        }
+
+        #endregion PROPERTY: IsUpdateAvailable
+
+        #region PROPERTY: UnitPrice
+        //TODO: use converter instead
+        private double _unitPrice;
+
+        public double UnitPrice
+        {
+            get { return _unitPrice; }
+            set
+            {
+                if (_unitPrice == value) return;
+
+                _unitPrice = value;
+
+                RaisePropertyChanged(() => UnitPrice);
+
+                Product.UnitPrice = Convert.ToDecimal(UnitPrice);
+            }
+        }
+
+        #endregion PROPERTY: UnitPrice
+
+        #region PROPERTY: SpecialPrice
+        //TODO: use converter instead
+        private double _specialPrice;
+
+        public double SpecialPrice
+        {
+            get { return _specialPrice; }
+            set
+            {
+                if (_specialPrice == value) return;
+
+                _specialPrice = value;
+
+                RaisePropertyChanged(() => SpecialPrice);
+
+                Product.SpecialPrice = Convert.ToDecimal(SpecialPrice);
+            }
+        }
+
+        #endregion PROPERTY: SpecialPrice
 
         #region PROPERTY: Product
 
@@ -99,6 +166,8 @@ namespace CheckoutKata.Core.ViewModels
         #endregion PROPERTY: Product
 
         #endregion Public Properties
+
+        #region Commands
 
         #region COMMAND: UpdateProduct
 
@@ -149,8 +218,12 @@ namespace CheckoutKata.Core.ViewModels
             _productService.AddProduct(Product);
 
             Close(this);
+
+            // TODO: use messenger to notify the Dashboard that the list has to be taken again from database to have the new product
         }
 
         #endregion COMMAND: Insert
+
+        #endregion Commands
     }
 }

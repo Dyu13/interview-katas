@@ -223,3 +223,8 @@ C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUW
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\bin\x86\Debug\PCLStorage.Abstractions.dll
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\bin\x86\Debug\PCLStorage.dll
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\obj\x86\Debug\CheckoutKata.ClientAdminUWP.csproj.GenerateResource.Cache
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\bin\x86\Debug\Views\ProductDetailsView.xbf
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\obj\x86\Debug\Views\ProductDetailsView.g.i.cs
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\obj\x86\Debug\Views\ProductDetailsView.g.cs
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\obj\x86\Debug\Views\ProductDetailsView.xaml
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\obj\x86\Debug\Views\ProductDetailsView.xbf

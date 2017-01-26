@@ -132,21 +132,23 @@ namespace CheckoutKata.ClientAdminUWP.CheckoutKata_ClientAdminUWP_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[6];
+            _typeNameTable = new string[7];
             _typeNameTable[0] = "MvvmCross.WindowsUWP.Views.MvxWindowsPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "MvvmCross.WindowsUWP.Views.IMvxWindowsFrame";
             _typeNameTable[4] = "MvvmCross.Core.ViewModels.IMvxViewModel";
             _typeNameTable[5] = "CheckoutKata.ClientAdminUWP.Views.DashboardView";
+            _typeNameTable[6] = "CheckoutKata.ClientAdminUWP.Views.ProductDetailsView";
 
-            _typeTable = new global::System.Type[6];
+            _typeTable = new global::System.Type[7];
             _typeTable[0] = typeof(global::MvvmCross.WindowsUWP.Views.MvxWindowsPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::MvvmCross.WindowsUWP.Views.IMvxWindowsFrame);
             _typeTable[4] = typeof(global::MvvmCross.Core.ViewModels.IMvxViewModel);
             _typeTable[5] = typeof(global::CheckoutKata.ClientAdminUWP.Views.DashboardView);
+            _typeTable[6] = typeof(global::CheckoutKata.ClientAdminUWP.Views.ProductDetailsView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -183,6 +185,7 @@ namespace CheckoutKata.ClientAdminUWP.CheckoutKata_ClientAdminUWP_XamlTypeInfo
 
         private object Activate_0_MvxWindowsPage() { return new global::MvvmCross.WindowsUWP.Views.MvxWindowsPage(); }
         private object Activate_5_DashboardView() { return new global::CheckoutKata.ClientAdminUWP.Views.DashboardView(); }
+        private object Activate_6_ProductDetailsView() { return new global::CheckoutKata.ClientAdminUWP.Views.ProductDetailsView(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -225,6 +228,13 @@ namespace CheckoutKata.ClientAdminUWP.CheckoutKata_ClientAdminUWP_XamlTypeInfo
             case 5:   //  CheckoutKata.ClientAdminUWP.Views.DashboardView
                 userType = new global::CheckoutKata.ClientAdminUWP.CheckoutKata_ClientAdminUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.WindowsUWP.Views.MvxWindowsPage"));
                 userType.Activator = Activate_5_DashboardView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  CheckoutKata.ClientAdminUWP.Views.ProductDetailsView
+                userType = new global::CheckoutKata.ClientAdminUWP.CheckoutKata_ClientAdminUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.WindowsUWP.Views.MvxWindowsPage"));
+                userType.Activator = Activate_6_ProductDetailsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
