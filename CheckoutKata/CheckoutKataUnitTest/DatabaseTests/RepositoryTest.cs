@@ -26,14 +26,14 @@ namespace CheckoutKataUnitTest.DatabaseTests
         {
             // Arrange
             IRepository<Product> csvRepository = new ProductCsvRepository<Product>();
-            const string productSku = "A";
+            const string expectedProductSku = "A";
 
             // Act
             var productList = csvRepository.GetDataList().ToList();
             
             // Assert
             Assert.IsNotNull(productList);
-            Assert.IsTrue(productList[0].Sku == productSku);
+            Assert.IsTrue(expectedProductSku == productList[0].Sku);
         }
 
         [TestMethod]

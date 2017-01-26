@@ -9,8 +9,9 @@ namespace CheckoutKata.Core.Database
 {
     public class ProductCsvRepository<T> : IRepository<T> where T : class, new()
     {
+        #region Constructor
+
         private IFile _file;
-        
 
         public ProductCsvRepository()
         {
@@ -24,6 +25,10 @@ namespace CheckoutKata.Core.Database
                 CreationCollisionOption.OpenIfExists).Result;
             _file.WriteAllTextAsync(dataContent).Wait();
         }
+
+        #endregion Constructor
+
+        #region GetDataList
 
         public IEnumerable<T> GetDataList()
         {
@@ -45,6 +50,10 @@ namespace CheckoutKata.Core.Database
             return items as List<T>;
         }
 
+        #endregion GetDataList
+
+        #region GetData
+
         public T GetData(string name)
         {
             var products = GetDataList() as List<Product>;
@@ -53,6 +62,10 @@ namespace CheckoutKata.Core.Database
 
             return product as T;
         }
+
+        #endregion GetData
+
+        #region Insert
 
         public void Insert(T entry)
         {
@@ -67,6 +80,10 @@ namespace CheckoutKata.Core.Database
 
             _file.WriteAllTextAsync(content).Wait();
         }
+
+        #endregion Insert
+
+        #region Update
 
         public void Update(T entry)
         {
@@ -96,6 +113,10 @@ namespace CheckoutKata.Core.Database
             _file.WriteAllTextAsync(content).Wait();
         }
 
+        #endregion Update
+
+        #region Delete
+
         public void Delete(T entry)
         {
             var product = entry as Product;
@@ -123,5 +144,7 @@ namespace CheckoutKata.Core.Database
 
             _file.WriteAllTextAsync(content).Wait();
         }
+
+        #endregion Delete
     }
 }
