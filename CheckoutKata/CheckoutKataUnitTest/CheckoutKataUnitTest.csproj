@@ -63,6 +63,7 @@
     <Compile Include="DatabaseTests\RepositoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceTests\ProductServiceTest.cs" />
+    <Compile Include="ServiceTests\CheckoutServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
