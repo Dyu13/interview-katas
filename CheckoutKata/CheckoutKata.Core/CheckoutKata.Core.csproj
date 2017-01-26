@@ -41,12 +41,16 @@
     <Compile Include="Database\IRepository.cs" />
     <Compile Include="Database\IRepositoryFactory.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductSummary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CheckoutService.cs" />
     <Compile Include="Services\ICheckoutService.cs" />
     <Compile Include="Services\IProductService.cs" />
     <Compile Include="Services\ProductService.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\DashboardViewModel.cs" />
+    <Compile Include="ViewModels\NavigationParameters\ProductDetailsNavigationParameter.cs" />
+    <Compile Include="ViewModels\ProductDetailsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Binding, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">

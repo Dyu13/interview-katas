@@ -220,3 +220,6 @@ C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUW
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\obj\x86\Debug\MvvmCross.WindowsUWP.pri.xml
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\obj\x86\Debug\MvvmCross.Platform.WindowsCommon.pri.xml
 C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\bin\x86\Debug\PCLStorage.Abstractions.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\bin\x86\Debug\PCLStorage.dll
+C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\obj\x86\Debug\CheckoutKata.ClientAdminUWP.csproj.GenerateResource.Cache

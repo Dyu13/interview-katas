@@ -85,6 +85,12 @@
     <AppxPackagedFile Include="C:\Users\Dyu\.nuget\packages\MvvmCross.Platform\4.4.0\lib\win81\MvvmCross.Platform.dll">
       <PackagePath>MvvmCross.Platform.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dyu\.nuget\packages\PCLStorage\1.0.2\lib\portable-win8+wpa81\PCLStorage.Abstractions.dll">
+      <PackagePath>PCLStorage.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dyu\.nuget\packages\PCLStorage\1.0.2\lib\portable-win8+wpa81\PCLStorage.dll">
+      <PackagePath>PCLStorage.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dyu\.nuget\packages\runtime.any.System.Collections\4.0.11\lib\netcore50\System.Collections.dll">
       <PackagePath>System.Collections.dll</PackagePath>
     </AppxPackagedFile>

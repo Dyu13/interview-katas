@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-25T09:23:10.220</Modified>
+      <Modified>2017-01-26T03:16:56.820</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\bin\x86\Debug\CheckoutKata.ClientAdminUWP.exe">
       <PackagePath>entrypoint\CheckoutKata.ClientAdminUWP.exe</PackagePath>
-      <Modified>2017-01-25T09:23:08.807</Modified>
+      <Modified>2017-01-26T03:16:56.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dyu\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -115,6 +115,14 @@
     <AppxPackagedFile Include="C:\Users\Dyu\.nuget\packages\MvvmCross.Platform\4.4.0\lib\win81\MvvmCross.Platform.dll">
       <PackagePath>MvvmCross.Platform.dll</PackagePath>
       <Modified>2016-11-01T22:58:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dyu\.nuget\packages\PCLStorage\1.0.2\lib\portable-win8+wpa81\PCLStorage.Abstractions.dll">
+      <PackagePath>PCLStorage.Abstractions.dll</PackagePath>
+      <Modified>2015-01-18T08:36:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dyu\.nuget\packages\PCLStorage\1.0.2\lib\portable-win8+wpa81\PCLStorage.dll">
+      <PackagePath>PCLStorage.dll</PackagePath>
+      <Modified>2015-01-18T08:36:20.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dyu\.nuget\packages\runtime.any.System.Collections\4.0.11\lib\netcore50\System.Collections.dll">
       <PackagePath>System.Collections.dll</PackagePath>
@@ -518,7 +526,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\CheckoutKata.Core.dll">
       <PackagePath>CheckoutKata.Core.dll</PackagePath>
-      <Modified>2017-01-25T09:23:06.854</Modified>
+      <Modified>2017-01-26T03:15:36.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -577,7 +585,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\bin\x86\Debug\Core\CheckoutKata.ClientAdminUWP.exe">
       <PackagePath>CheckoutKata.ClientAdminUWP.exe</PackagePath>
-      <Modified>2017-01-25T09:23:10.211</Modified>
+      <Modified>2017-01-26T03:16:56.814</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
