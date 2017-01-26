@@ -16,9 +16,11 @@ namespace CheckoutKataUnitTest.ServiceTests
             const string productSku = "A";
 
             // Act
-            checkoutService.Scan(productSku);
+            var product = checkoutService.Scan(productSku);
 
             // Assert
+            Assert.IsNotNull(product);
+            Assert.AreEqual(productSku, product.Sku);
         }
 
         [TestMethod]
