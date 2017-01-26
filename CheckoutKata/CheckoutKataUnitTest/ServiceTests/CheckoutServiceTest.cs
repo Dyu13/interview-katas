@@ -13,7 +13,7 @@ namespace CheckoutKataUnitTest.ServiceTests
         {
             // Arrange
             var checkoutService = new CheckoutService();
-            var productSku = "A";
+            const string productSku = "A";
 
             // Act
             checkoutService.Scan(productSku);
@@ -43,11 +43,13 @@ namespace CheckoutKataUnitTest.ServiceTests
                     SpecialPrice = -1
                 }, 2 }
             };
+            const int expectedTotalPrice = 24;
 
             // Act
             var totalPrice = checkoutService.GetTotalPrice(productsQuantitiesDictionary);
 
             // Assert
+            Assert.AreEqual(expectedTotalPrice, totalPrice);
         }
     }
 }

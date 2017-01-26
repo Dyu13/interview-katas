@@ -13,7 +13,7 @@ namespace CheckoutKataUnitTest.ServiceTests
         {
             // Arrange
             var productService = new ProductService();
-            var expectedProductSku = "A";
+            const string expectedProductSku = "A";
 
             // Act
             var productList = productService.GetAllProducts().ToList();
@@ -28,8 +28,8 @@ namespace CheckoutKataUnitTest.ServiceTests
         {
             // Arrange
             var productService = new ProductService();
-            var productSku = "A";
-            var productPrice = 22.48m;
+            const string productSku = "A";
+            const decimal productPrice = 22.48m;
 
             // Act
             productService.UpdateProductPrice(productSku, productPrice);
@@ -45,9 +45,9 @@ namespace CheckoutKataUnitTest.ServiceTests
         {
             // Arrange
             var productService = new ProductService();
-            var productSku = "A";
-            var productSpecialQty = 3;
-            var productSpecialPrice = 22.48m;
+            const string productSku = "A";
+            const int productSpecialQty = 3;
+            const decimal productSpecialPrice = 22.48m;
 
             // Act
             productService.UpdateProductSpecialPrice(productSku, productSpecialQty, productSpecialPrice);
@@ -80,8 +80,8 @@ namespace CheckoutKataUnitTest.ServiceTests
         {
             // Arrange
             var productService = new ProductService();
-            var productSku = "A";
-            var expectedProductsCount = 3;
+            const string productSku = "A";
+            const int expectedProductsCount = 3;
 
             // Act
             productService.RemoveProduct(productSku);
