@@ -32,6 +32,7 @@ namespace CheckoutKataUnitTest.ServiceTests
             productService.UpdateProductPrice(productSku, productPrice);
 
             // Assert
+            
         }
 
         [TestMethod]
