@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-26T20:44:26.294</Modified>
+      <Modified>2017-01-26T21:29:31.473</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\bin\x86\Debug\CheckoutKata.ClientAdminUWP.exe">
       <PackagePath>entrypoint\CheckoutKata.ClientAdminUWP.exe</PackagePath>
-      <Modified>2017-01-26T20:44:25.686</Modified>
+      <Modified>2017-01-26T21:29:31.027</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dyu\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -526,7 +526,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.Core\bin\Debug\CheckoutKata.Core.dll">
       <PackagePath>CheckoutKata.Core.dll</PackagePath>
-      <Modified>2017-01-26T20:44:22.797</Modified>
+      <Modified>2017-01-26T21:29:28.856</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -585,7 +585,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dyu\Source\Repos\InterviewKatas\CheckoutKata\CheckoutKata.ClientAdminUWP\bin\x86\Debug\Core\CheckoutKata.ClientAdminUWP.exe">
       <PackagePath>CheckoutKata.ClientAdminUWP.exe</PackagePath>
-      <Modified>2017-01-26T20:44:26.281</Modified>
+      <Modified>2017-01-26T21:29:31.468</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

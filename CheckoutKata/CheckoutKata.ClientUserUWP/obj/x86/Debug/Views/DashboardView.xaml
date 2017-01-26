@@ -6,9 +6,32 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:views="using:MvvmCross.WindowsUWP.Views"
     mc:Ignorable="d">
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <StackPanel Padding="10">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Product SKU: " Margin="5" />
+                <TextBox Text="{Binding ProductSku, Mode=TwoWay}" PlaceholderText="Eg. A" Margin="5" />
+                <Button Content="Scan" Command="{Binding ScanCommand}" Margin="5" />
+                <Button Content="Pay" Command="{Binding PayCommand}" Margin="5" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Total price: " Margin="5" />
+                <TextBlock Text="{Binding TotalPrice}" Margin="5" />
+            </StackPanel>
+            <ListBox ItemsSource="{Binding ProductSummaryList}" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Product SKU: " />
+                            <TextBlock Text="{Binding Sku}" FontWeight="Bold" />
+                            <TextBlock Text=", " />
+                            <TextBlock Text="Quantity: " />
+                            <TextBlock Text="{Binding Qty}" FontWeight="Bold" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
     </Grid>
 </views:MvxWindowsPage>
 

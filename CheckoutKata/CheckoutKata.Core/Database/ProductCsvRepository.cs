@@ -18,12 +18,18 @@ namespace CheckoutKata.Core.Database
             var client = new HttpClient();
             var dataContent = client.GetStringAsync("https://raw.githubusercontent.com/Dyu13/interview-katas/develop/CheckoutKata/CheckoutKata.Core/Content/Products.csv").Result;
 
+            // TODO: change to a static folder in order to always use the same DB for Admin And User
             var rootFolder = FileSystem.Current.LocalStorage;
             var folder = rootFolder.CreateFolderAsync("Content",
                 CreationCollisionOption.OpenIfExists).Result;
             _file = folder.CreateFileAsync("Products.csv",
                 CreationCollisionOption.OpenIfExists).Result;
-            _file.WriteAllTextAsync(dataContent).Wait();
+
+            var fileText = _file.ReadAllTextAsync().Result;
+            if (fileText == string.Empty)
+            {
+                _file.WriteAllTextAsync(dataContent).Wait();
+            }
         }
 
         #endregion Constructor

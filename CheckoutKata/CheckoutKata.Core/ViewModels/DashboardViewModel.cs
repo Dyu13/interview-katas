@@ -29,6 +29,7 @@ namespace CheckoutKata.Core.ViewModels
             FilteredProducts = new MvxObservableCollection<string>(_productList);
 
             _productsQuantitiesDictionary = new Dictionary<Product, int>();
+            ProductSummaryList = new MvxObservableCollection<ProductSummary>();
 
             IsAnyProductSelected = false;
             IsNotNewProduct = true;
@@ -222,20 +223,20 @@ namespace CheckoutKata.Core.ViewModels
 
         #endregion PROPERTY: TotalPrice
 
-        #region PROPERTY: ProductSymmaryList
+        #region PROPERTY: ProductSummaryList
 
-        private MvxObservableCollection<ProductSummary> _productSymmaryList;
+        private MvxObservableCollection<ProductSummary> _productSummaryList;
 
-        public MvxObservableCollection<ProductSummary> ProductSymmaryList
+        public MvxObservableCollection<ProductSummary> ProductSummaryList
         {
-            get { return _productSymmaryList; }
+            get { return _productSummaryList; }
             set
             {
-                if (_productSymmaryList == value) return;
+                if (_productSummaryList == value) return;
 
-                _productSymmaryList = value;
+                _productSummaryList = value;
 
-                RaisePropertyChanged(() => ProductSymmaryList);
+                RaisePropertyChanged(() => ProductSummaryList);
             }
         }
 
@@ -370,9 +371,11 @@ namespace CheckoutKata.Core.ViewModels
 
             if (isProductAlreadyAdded)
             {
-                _productsQuantitiesDictionary[product]++;
+                var key = _productsQuantitiesDictionary.Keys.FirstOrDefault(k => k.Sku == product.Sku);
+                _productsQuantitiesDictionary[key]++;
 
-                ProductSymmaryList.FirstOrDefault(p => p.Sku == product.Sku).Qty++;
+                ProductSummaryList.FirstOrDefault(p => p.Sku == product.Sku).Qty++;
+                ProductSummaryList = new MvxObservableCollection<ProductSummary>(ProductSummaryList);
 
                 TotalPrice = _checkoutService.GetTotalPrice(_productsQuantitiesDictionary);
 
@@ -381,7 +384,7 @@ namespace CheckoutKata.Core.ViewModels
 
             _productsQuantitiesDictionary.Add(product, 1);
 
-            ProductSymmaryList.Add(new ProductSummary
+            ProductSummaryList.Add(new ProductSummary
             {
                 Sku = product.Sku,
                 Qty = 1
@@ -408,7 +411,7 @@ namespace CheckoutKata.Core.ViewModels
         private void Pay()
         {
             ProductSku = string.Empty;
-            ProductSymmaryList = new MvxObservableCollection<ProductSummary>();
+            ProductSummaryList = new MvxObservableCollection<ProductSummary>();
             TotalPrice = 0;
             _productsQuantitiesDictionary = new Dictionary<Product, int>();
         }
